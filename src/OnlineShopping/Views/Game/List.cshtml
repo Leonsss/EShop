@@ -1,0 +1,8 @@
+﻿@model GamesListViewModel
+
+<div class="row marginTop">
+    @foreach (var game in Model.Games)
+    {
+        @Html.Partial("GamesSummary", game)
+    }
+</div>
